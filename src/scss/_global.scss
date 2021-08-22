@@ -44,7 +44,8 @@ input {
 }
 
 input::selection { 
-  background: #432818 
+  color: #fff;
+  background: #432818;
 }
 
 input:focus {
@@ -63,6 +64,6 @@ button {
 
 button:active {
   transition: 0.3s all;
-  transform: translateY(10px);
+  transform: translateY(7px);
 }
 
