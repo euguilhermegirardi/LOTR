@@ -6,7 +6,7 @@
   
   height: 100vh;
   width: 18%;
-  background-color: #f1f1f1;
+  background-color: #f7f7ff;
   box-shadow: 0px 2px 11px 4px #aaa;
 
   &__links {
@@ -57,7 +57,8 @@
     justify-content: flex-start;
     
     width: 100%;
-    padding: 8px 15px;
+    padding: 15px;
+    font-size: 1.3rem;
     cursor: pointer;
 
     &:hover {
@@ -82,7 +83,6 @@
 
     height: 20%;
     width: 100%;
-    padding-top: 30px;
   }
 
   &__logo-footer-container {

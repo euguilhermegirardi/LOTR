@@ -2,6 +2,11 @@ import React from 'react'
 
 import './styles.scss'
 import {Header} from '../../components/Header'
+import {Home} from '../../views/Home'
+import {Books} from '../../views/Books'
+import {Movies} from '../../views/Movies'
+import {Characters} from '../../views/Characters'
+import {Quotes} from '../../views/Quotes'
 import {Sidebar} from '../../components/Sidebar'
 
 function AuthenticatedApp() {
@@ -9,11 +14,9 @@ function AuthenticatedApp() {
     <section className="dashboard">
       <Sidebar />
       
-      <div style={{display: 'flex', flexDirection: 'column'}}>
+      <div className="dashboard__header-container">
         <Header />
-        <aside>
-          <h2>Content</h2>
-        </aside>
+        <Movies />
       </div>
     </section>
   )

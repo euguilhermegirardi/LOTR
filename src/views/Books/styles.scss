@@ -1,0 +1,96 @@
+.books {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  height: auto;
+  overflow: auto;
+
+  &__body {
+    display: flex;
+    align-items: flex-start;
+
+    height: auto;
+    width: 100%;
+  }
+
+  &__buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    width: auto;
+    min-width: 12rem;
+    height: auto;
+    min-height: 40rem;
+    padding: 1rem;
+    margin-left: 2rem;
+    margin-top: 2.5rem;
+  }
+
+  &__button {
+    width: 10rem;
+    height: 3rem;
+    background-color: #6F1D1B;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+  }
+
+  &__books-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 100%;
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  &__books-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    flex-wrap: wrap;
+  }
+
+  &__book-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: auto;
+    min-height: 15rem;
+    width: auto;
+    min-width: 20rem;
+    margin: 0.5rem;
+    padding: 1rem 0.5rem;
+  }
+
+  &__book-title {
+    margin: 5px;
+    font-size: 1.3rem;
+  }
+
+  &__book-description {
+    margin: 5px;
+    font-size: 0.8rem;
+    text-align: center;
+    width: 350px;
+  }
+}
+
+.example {
+  height: 250px;
+  width: 300px;
+  background-color: black;
+}

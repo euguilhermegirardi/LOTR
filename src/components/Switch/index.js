@@ -7,12 +7,12 @@ import Switch from '@material-ui/core/Switch';
 
 const PurpleSwitch = withStyles({
   switchBase: {
-    color: brown[400],
+    color: brown[600],
     '&$checked': {
       color: brown[700],
     },
     '&$checked + $track': {
-      backgroundColor: brown[400],
+      backgroundColor: brown[600],
     },
   },
   checked: {},
@@ -31,7 +31,7 @@ export default function CustomizedSwitches() {
   };
 
   return (
-    <FormGroup>
+    <FormGroup style={{marginRight: '-1.6rem'}}>
       <FormControlLabel
         control={<PurpleSwitch checked={state.checkedA} onChange={handleChange} name="checkedA" />}
       />
