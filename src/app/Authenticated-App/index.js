@@ -12,26 +12,21 @@ import {Sidebar} from '../../components/Sidebar'
 
 function AuthenticatedApp() {
   return (
-    <section className="dashboard">
-      <Sidebar />
-      <div className="dashboard__header-container">
-        <Header />
-        <AppRoutes />
-      </div>
-    </section>
-  )
-}
-
-function AppRoutes() {
-  return (
     <Router>  
-      <Switch>
-        <Route exact path='/dashboard' component={Home} />
-        <Route exact path='/books' component={Books} />
-        <Route exact path='/movies' component={Movies} />
-        <Route exact path='/characters' component={Characters} />
-        <Route exact path='/quotes' component={Quotes} />
-      </Switch>
+      <section className="dashboard">
+        <Sidebar />
+          
+        <div className="dashboard__header-container">
+          <Header />
+          <Switch>
+            <Route exact path='/dashboard' component={Home} />
+            <Route exact path='/books' component={Books} />
+            <Route exact path='/movies' component={Movies} />
+            <Route exact path='/characters' component={Characters} />
+            <Route exact path='/quotes' component={Quotes} />
+        </Switch>
+        </div>
+      </section>
     </Router>
   )
 }
