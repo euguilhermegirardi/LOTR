@@ -19,7 +19,7 @@ function AuthenticatedApp() {
         <div className="dashboard__header-container">
           <Header />
           <Switch>
-            <Route exact path='/dashboard' component={Home} />
+            <Route exact path='/' component={Home} />
             <Route exact path='/books' component={Books} />
             <Route exact path='/movies' component={Movies} />
             <Route exact path='/characters' component={Characters} />
@@ -31,4 +31,4 @@ function AuthenticatedApp() {
   )
 }
 
-export {AuthenticatedApp}
+export default AuthenticatedApp

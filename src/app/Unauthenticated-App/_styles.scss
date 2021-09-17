@@ -1,8 +1,9 @@
-.home {
+.unauthenticated-home {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 
   position: relative;
   height: 100vh;
@@ -17,7 +18,7 @@
   }
 
   &__img {
-    background: url('../assets/unauthenticated-app/smeagol.png') no-repeat left bottom;
+    background: url('../../assets/unauthenticated-app/smeagol.png') no-repeat left bottom;
     background-size: contain;
     height: 100%;
     width: 100%;

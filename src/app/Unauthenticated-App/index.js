@@ -1,16 +1,16 @@
 import '../../scss/_global.scss'
-import '../../scss/_home.scss'
-import {Login} from '../../components/Login'
+import './_styles.scss'
+import {Login} from '../../components/Login/index-new'
 
 function UnauthenticatedApp() {
   return (
-    <section className="home">
-      <div className="home__img-container">
-        <div className="home__img" />
+    <section className="unauthenticated-home">
+      <div className="unauthenticated-home__img-container">
+        <div className="unauthenticated-home__img" />
       </div>
       <Login />
     </section>
   )
 }
 
-export {UnauthenticatedApp}
+export default UnauthenticatedApp

@@ -1,6 +1,5 @@
 import React from 'react'
 import {NavLink as RouterLink} from 'react-router-dom'
-import {useMatch} from '@reach/router'
 
 import './styles.scss'
 import '../../scss/_global.scss'
@@ -28,7 +27,7 @@ function Nav() {
       <div className="sidebar__logo-content">
           <div className="sidebar__logo-container">
             <RouterLink 
-              to="/dashboard"
+              to="/"
             >
               <img className="sidebar__logo" src={logo} alt="logo-png" />
             </RouterLink>
@@ -43,30 +42,6 @@ function Nav() {
         activeClassName="active-link"
       >
         <span>Books</span>
-      </RouterLink>
-      <div className="divider" />
-      <RouterLink 
-        to="/movies" 
-        className="sidebar__link-container" 
-        activeClassName="active-link"
-      >
-        <span>Movies</span>
-      </RouterLink>
-      <div className="divider" />
-      <RouterLink 
-        to="/characters" 
-        className="sidebar__link-container"
-        activeClassName="active-link"
-      >
-        <span>Characters</span>
-      </RouterLink>
-      <div className="divider" />
-      <RouterLink 
-        to="/quotes" 
-        className="sidebar__link-container"
-        activeClassName="active-link"
-      >
-        <span>Quotes</span>
       </RouterLink>
       <div className="divider" />
     </div>
