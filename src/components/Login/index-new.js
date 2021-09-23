@@ -19,7 +19,6 @@ function Login() {
   const handleSubmit = event => {
     event.preventDefault()
     const {username, password} = event.target.elements
-
     run(
       login({
         username: username.value,
@@ -29,20 +28,16 @@ function Login() {
   }
 
   return (
-    <form 
-      className="login"
-      onSubmit={handleSubmit}
-      
-    >
+    <form className="login" onSubmit={handleSubmit}>
       <div className="login__input-container">
-        <input className="login__input" id="username" type="text" />
-        <input className="login__input" id="password" type="password" />
+        <input aria-label="username" className="login__input" id="username" type="text" />
+        <input aria-label="password" className="login__input" id="password" type="password" />
       </div>
 
       {isError ? <span>{error}</span> : null}
 
-      <button type="submit" className="login__btn" disabled={isLoading}>
-        {isLoading ? <ClipLoader color={'#fff'} loading={isLoading} css={override} size={35} /> : 'Login'}
+      <button aria-label="submit-btn" type="submit" className="login__btn" disabled={isLoading}>
+        {isLoading ? <ClipLoader aria-label="loading" color={'#fff'} loading={isLoading} css={override} size={35} /> : 'Login'}
       </button>
     </form>
   )

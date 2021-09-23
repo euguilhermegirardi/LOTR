@@ -85,7 +85,7 @@
     padding: 1rem 0.5rem;
   }
 
-  &__book {
+  &__book-img-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,6 +97,14 @@
   &__book-img {
     width: 100%;
     height: 100%;
+  }
+
+  &__description-container {
+
+  }
+
+  &__books__books-container {
+
   }
 
   &__book-title {

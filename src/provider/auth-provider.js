@@ -30,7 +30,7 @@ function client({username, password}) {
       } else {
         return reject('Password or username is incorrect!')
       }
-    }, 1500);
+    }, 55500);
   })
 }
 

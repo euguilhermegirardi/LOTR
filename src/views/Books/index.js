@@ -34,18 +34,18 @@ function Books() {
       <>
         {bookResource ? bookResource.map(book => (
           <div className="books__buttons-container">
-            <div className="books__book">
+            <div className="books__book-img-container">
               <img 
                 className="books__book-img" 
                 src={bookName === 'The Fellowship Of The Ring' ? book1 : bookName === 'The Two Towers' ? book2 : bookName === 'The Return Of The King' ? book3 : null} 
                 alt={book.name} 
               />
             </div>
-            <div>
+            <div className="books__description-container">
               <h3>{book.name}</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quos optio pariatur quae similique iure inventore suscipit porro impedit id, nisi minus magnam quo laborum corrupti animi, quisquam officia voluptatum sapiente quibusdam? Deleniti, nesciunt provident.</p>
             </div>
-            <div>
+            <div className="books__books-container">
               <button onClick={() => setBookInfoReady(false)}>Return</button>
             </div>
           </div>

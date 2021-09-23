@@ -14,10 +14,10 @@ function Header() {
           <span className="header__user">Good morning, Guilherme!</span>
           <button className="header__btn-logout" onClick={logout}>Logout</button>
         </div>
-        <div className="header__theme">
+        {/* <div className="header__theme">
           <span className="header__switch-txt">Switch theme</span>
           <CustomizedSwitches />
-        </div>
+        </div> */}
       </header>
       <div className="divider" />
     </>
