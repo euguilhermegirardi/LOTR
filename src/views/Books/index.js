@@ -73,9 +73,9 @@ function Books() {
     buttonsArray = buttons.docs
 
     return (
-      <div className="books__buttons-container">
+      <div aria-label="buttons-container" className="books__buttons-container">
         {buttonsArray.map(book => (
-          <button 
+          <button
             key={book._id} 
             className="books__button" 
             style={{padding: '4px', height: "3.5rem"}}
@@ -97,7 +97,7 @@ function Books() {
 
       <div className="books__body">
         <ErrorBoundaryComponent>
-          <React.Suspense fallback={<div className="books__buttons-container"><SmallSpinner /></div>}>
+          <React.Suspense fallback={<div className="books__buttons-container" aria-label="books__buttons-container"><SmallSpinner aria-label="loading-buttons" /></div>}>
             <ButtonsComponent />
           </React.Suspense>
         </ErrorBoundaryComponent>

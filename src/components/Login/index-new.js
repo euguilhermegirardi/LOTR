@@ -37,7 +37,7 @@ function Login() {
       {isError ? <span>{error}</span> : null}
 
       <button aria-label="submit-btn" type="submit" className="login__btn" disabled={isLoading}>
-        {isLoading ? <ClipLoader aria-label="loading" color={'#fff'} loading={isLoading} css={override} size={35} /> : 'Login'}
+        {isLoading ? <ClipLoader aria-label="loading" color={'#fff'} loading={isLoading} size={35} /> : 'Login'}
       </button>
     </form>
   )

@@ -23,7 +23,7 @@ function Sidebar() {
 
 function Nav() {
   return (
-    <div className="sidebar__links">
+    <nav className="sidebar__links">
       <div className="sidebar__logo-content">
           <div className="sidebar__logo-container">
             <RouterLink 
@@ -40,11 +40,13 @@ function Nav() {
         to="/books" 
         className="sidebar__link-container" 
         activeClassName="active-link"
+        aria-label="link"
+        name="link"
       >
         <span>Books</span>
       </RouterLink>
       <div className="divider" />
-    </div>
+    </nav>
   )
 }
 
